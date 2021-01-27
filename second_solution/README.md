@@ -11,3 +11,4 @@ the database using SQLAlchemy ORM toolkit which made it easier for query fetchin
 
 SQLAlchemy helped me to map objects to database .
 Now each Customer_model bject which has 23 attributes like Customer_Age , Gender , etc can easily be inserted , removed , fetched and updated by object mapping .
+Further, SQLAlchemy helped me create a Flask Admin Dashboard too.
