@@ -27,6 +27,7 @@ class Customer(Resource):
         connection.close()
 
         d={}
+        z=1
         if row:
             for i in range(len(row)):
                 s={}
@@ -54,7 +55,10 @@ class Customer(Resource):
                 s["Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1"]=str(row[i][21])
                 s["Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2"]=str(row[i][22])
 
-                d[i]=s
+                res = all(s.get(key,None)==val for key,val in di.items())
+                if res==True:
+                    d[z]=s
+                    z=z+1
 
 
 
