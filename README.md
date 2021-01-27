@@ -23,4 +23,3 @@ Further Improvements :
     1. Deploying the app on Cloud Server
     2. Using docker to containerize the application
 
-
